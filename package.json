@@ -17,12 +17,13 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "homepage": "https://github.com/saitoChen/commit#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "commitlint": "^8.2.0",
     "conventional-changelog-cli": "^2.0.23",
     "cz-customizable": "^6.2.0",
