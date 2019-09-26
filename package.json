@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git add . && git cz",
-    "log":"conventional-changelog --config node_modules/changelog-sn/lib/log -i CHANGELOG.md -s -r 2"
+    "log":"conventional-changelog --config node_modules/changelog-sn/lib/log -i CHANGELOG.md -s -r 2",
+    "v":"standard-version --prerelease"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
     },
     "cz-customizable": {
       "config": "./.czconfigrc.js"
+    }
+  },
+  "standard-version":{
+    "skip":{
+        "changelog":true
     }
   },
   "homepage": "https://github.com/saitoChen/commit#readme",
