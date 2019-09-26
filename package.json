@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node index.js"
+      "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "homepage": "https://github.com/saitoChen/commit#readme",
