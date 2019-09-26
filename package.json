@@ -1,13 +1,13 @@
 {
   "name": "jef",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "test-custom-commit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git add . && git cz",
-    "log":"conventional-changelog --config node_modules/changelog-sn/lib/log -i CHANGELOG.md -s -r 2",
-    "v":"standard-version --prerelease"
+    "log": "conventional-changelog --config node_modules/changelog-sn/lib/log -i CHANGELOG.md -s -r 2",
+    "v": "standard-version --prerelease"
   },
   "repository": {
     "type": "git",
@@ -31,9 +31,9 @@
       "config": "./.czconfigrc.js"
     }
   },
-  "standard-version":{
-    "skip":{
-        "changelog":true
+  "standard-version": {
+    "skip": {
+      "changelog": true
     }
   },
   "homepage": "https://github.com/saitoChen/commit#readme",
