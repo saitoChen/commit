@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git add . && git cz"
+    "commit": "git add . && git cz",
+    "log":"conventional-changelog --config node_modules/changelog-sn/lib/log -i CHANGELOG.md -s -r 2"
   },
   "repository": {
     "type": "git",
