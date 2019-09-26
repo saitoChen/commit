@@ -1,0 +1,9 @@
+
+Todo:
+  [x] @commitlint/cli
+  [x] commitizen
+  [X] cz-customizable
+  [x] husky
+  [X] conventional-changelog-cli
+  [X] standard-version
+  [X] commitlint 

@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/saitoChen/commit/issues"
   },
-  "homepage": "https://github.com/saitoChen/commit#readme"
+  "husky": {
+    "hooks": {
+      "pre-commit": "node index.js"
+    }
+  },
+  "homepage": "https://github.com/saitoChen/commit#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "commitlint": "^8.2.0",
+    "conventional-changelog-cli": "^2.0.23",
+    "cz-customizable": "^6.2.0",
+    "husky": "^3.0.5",
+    "standard-version": "^7.0.0"
+  }
 }
