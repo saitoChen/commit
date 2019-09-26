@@ -4,7 +4,8 @@
   "description": "test-custom-commit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add . && git cz"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,19 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.czconfigrc.js"
+    }
+  },
   "homepage": "https://github.com/saitoChen/commit#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "changelog-sn": "0.0.10",
     "commitlint": "^8.2.0",
     "conventional-changelog-cli": "^2.0.23",
     "cz-customizable": "^6.2.0",
